@@ -2,7 +2,7 @@ extends KinematicBody
 
 const GRAVITY = -24.8
 var vel = Vector3()
-const MAX_SPEED = 5
+const MAX_SPEED = 10
 const JUMP_SPEED = 18
 const ACCEL = 4.5
 
@@ -13,12 +13,17 @@ const MAX_SLOPE_ANGLE = 40
 
 var camera
 var rotation_helper
+var raycast
+var held_object : Object
+var hold_position
 
-var MOUSE_SENSITIVITY = 0.05
+var MOUSE_SENSITIVITY = 0.1
 
 func _ready():
 	camera = $Head/Camera
 	rotation_helper = $Head
+	raycast = $Head/Camera/RayCast
+	hold_position = $Head/Camera/HoldPosition
 
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 
@@ -59,6 +64,17 @@ func process_input(delta):
 		else:
 			Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 	# ----------------------------------
+	
+	# Pick up objects
+	if Input.is_action_just_pressed("left_click"):
+		if(raycast.get_collider() == Globals.KEY):
+			Globals.KEY.global_transform.origin = Vector3(-999,-999,-999)
+			print('Kunci telah diambil')
+			
+		
+	if held_object:
+		held_object.global_transform.origin = hold_position.global_transform.origin
+		
 
 func process_movement(delta):
 	dir.y = 0

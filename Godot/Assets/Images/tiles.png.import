@@ -2,8 +2,8 @@
 
 importer="texture"
 type="StreamTexture"
-path.s3tc="res://.import/tiles.png-bfbd3a49507d49882cba49626454bc89.s3tc.stex"
-path.etc2="res://.import/tiles.png-bfbd3a49507d49882cba49626454bc89.etc2.stex"
+path.s3tc="res://.import/tiles.png-5376bd4fd0f5fe0c05ded444d6e5cc0c.s3tc.stex"
+path.etc2="res://.import/tiles.png-5376bd4fd0f5fe0c05ded444d6e5cc0c.etc2.stex"
 metadata={
 "imported_formats": [ "s3tc", "etc2" ],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Assets/tiles.png"
-dest_files=[ "res://.import/tiles.png-bfbd3a49507d49882cba49626454bc89.s3tc.stex", "res://.import/tiles.png-bfbd3a49507d49882cba49626454bc89.etc2.stex" ]
+source_file="res://Assets/Images/tiles.png"
+dest_files=[ "res://.import/tiles.png-5376bd4fd0f5fe0c05ded444d6e5cc0c.s3tc.stex", "res://.import/tiles.png-5376bd4fd0f5fe0c05ded444d6e5cc0c.etc2.stex" ]
 
 [params]
 

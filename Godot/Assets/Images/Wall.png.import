@@ -2,8 +2,8 @@
 
 importer="texture"
 type="StreamTexture"
-path.s3tc="res://.import/Floor.png-2014aba4533b5b820b53643445fc62e4.s3tc.stex"
-path.etc2="res://.import/Floor.png-2014aba4533b5b820b53643445fc62e4.etc2.stex"
+path.s3tc="res://.import/Wall.png-66cc1008898d8cc94eeaad686aeac84e.s3tc.stex"
+path.etc2="res://.import/Wall.png-66cc1008898d8cc94eeaad686aeac84e.etc2.stex"
 metadata={
 "imported_formats": [ "s3tc", "etc2" ],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Assets/Floor.png"
-dest_files=[ "res://.import/Floor.png-2014aba4533b5b820b53643445fc62e4.s3tc.stex", "res://.import/Floor.png-2014aba4533b5b820b53643445fc62e4.etc2.stex" ]
+source_file="res://Assets/Images/Wall.png"
+dest_files=[ "res://.import/Wall.png-66cc1008898d8cc94eeaad686aeac84e.s3tc.stex", "res://.import/Wall.png-66cc1008898d8cc94eeaad686aeac84e.etc2.stex" ]
 
 [params]
 
@@ -22,7 +22,7 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=true
-flags/filter=false
+flags/filter=true
 flags/mipmaps=true
 flags/anisotropic=false
 flags/srgb=1
