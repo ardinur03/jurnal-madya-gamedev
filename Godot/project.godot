@@ -21,7 +21,7 @@ _global_script_class_icons={
 [application]
 
 config/name="3D Dungeon RPG"
-run/main_scene="res://Scenes/World.tscn"
+run/main_scene="res://Scenes/HouseMap.tscn"
 config/icon="res://icon.png"
 
 [autoload]

@@ -16,6 +16,7 @@ var rotation_helper
 var raycast
 var held_object : Object
 var hold_position
+var key 
 
 var MOUSE_SENSITIVITY = 0.1
 
@@ -24,6 +25,7 @@ func _ready():
 	rotation_helper = $Head
 	raycast = $Head/Camera/RayCast
 	hold_position = $Head/Camera/HoldPosition
+	key = $"/root/Underground/Key"
 
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 
@@ -67,8 +69,9 @@ func process_input(delta):
 	
 	# Pick up objects
 	if Input.is_action_just_pressed("left_click"):
-		if(raycast.get_collider() == Globals.KEY):
-			Globals.KEY.global_transform.origin = Vector3(-999,-999,-999)
+
+		if(raycast.get_collider() == key):
+			key.global_transform.origin = Vector3(-999,-999,-999)
 			print('Kunci telah diambil')
 			
 		
