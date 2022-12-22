@@ -1,8 +1,7 @@
 extends Control
 
 func _ready():
-	pass # Replace with function body.
-
+	MusicController.play_mainmenu_BGM()
 
 func _on_Play_pressed():
 	get_tree().change_scene("res://Scenes/Underground.tscn");

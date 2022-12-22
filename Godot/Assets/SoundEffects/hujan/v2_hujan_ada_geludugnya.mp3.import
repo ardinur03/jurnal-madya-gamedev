@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/v2_hujan_ada_geludugnya.mp3-dfb3788408ef1d50375512ad1fa3afa4.mp3str"
+
+[deps]
+
+source_file="res://Assets/SoundEffects/hujan/v2_hujan_ada_geludugnya.mp3"
+dest_files=[ "res://.import/v2_hujan_ada_geludugnya.mp3-dfb3788408ef1d50375512ad1fa3afa4.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

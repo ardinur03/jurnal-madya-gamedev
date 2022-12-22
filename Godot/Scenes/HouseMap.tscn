@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Scenes/Player.tscn" type="PackedScene" id=1]
-[ext_resource path="res://Scenes/HouseEnvironment.tscn" type="PackedScene" id=2]
-[ext_resource path="res://Scripts/House.gd" type="Script" id=3]
+[ext_resource path="res://Scenes/HouseObject.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scripts/HouseMap.gd" type="Script" id=3]
+[ext_resource path="res://Scripts/HouseHUD.gd" type="Script" id=4]
 
 [node name="House" type="Spatial"]
 script = ExtResource( 3 )
@@ -12,3 +13,17 @@ transform = Transform( 3, 0, 0, 0, 5, 0, 0, 0, 3, 0, -10.8068, 0 )
 
 [node name="HouseMap" parent="." instance=ExtResource( 2 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6.53429, -12.219, 14.2267 )
+
+[node name="HUD" type="Control" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+script = ExtResource( 4 )
+
+[node name="House" type="Label" parent="HUD"]
+visible = false
+margin_left = 490.0
+margin_top = 270.0
+margin_right = 589.0
+margin_bottom = 284.0
+rect_scale = Vector2( 4, 4 )
+text = "MASUK RUMAH"

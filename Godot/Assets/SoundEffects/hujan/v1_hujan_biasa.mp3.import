@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/v1_hujan_biasa.mp3-a5eac3e4cb017c20ddfdd55e441d5392.mp3str"
+
+[deps]
+
+source_file="res://Assets/SoundEffects/hujan/v1_hujan_biasa.mp3"
+dest_files=[ "res://.import/v1_hujan_biasa.mp3-a5eac3e4cb017c20ddfdd55e441d5392.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

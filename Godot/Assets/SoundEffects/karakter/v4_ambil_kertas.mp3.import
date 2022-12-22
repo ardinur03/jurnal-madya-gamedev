@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/v4_ambil_kertas.mp3-4b2351d73e20ed29a42910983e1492f7.mp3str"
+
+[deps]
+
+source_file="res://Assets/SoundEffects/karakter/v4_ambil_kertas.mp3"
+dest_files=[ "res://.import/v4_ambil_kertas.mp3-4b2351d73e20ed29a42910983e1492f7.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

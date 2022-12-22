@@ -13,6 +13,7 @@ func _ready():
 	environment.ambient_light_color = Color("432d6d")
 	#environment.dof_blur_far_enabled = true
 	#environment.dof_blur_near_enabled = true
+	MusicController.play_labyrinthmap_BGM()
 	generate_map()
 
 func generate_map():

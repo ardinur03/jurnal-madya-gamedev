@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/v2_jalan_kaki.mp3-a1c0bcc13403b5c2db511b874f513239.mp3str"
+
+[deps]
+
+source_file="res://Assets/SoundEffects/karakter/v2_jalan_kaki.mp3"
+dest_files=[ "res://.import/v2_jalan_kaki.mp3-a1c0bcc13403b5c2db511b874f513239.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

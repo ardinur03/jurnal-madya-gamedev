@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/labyrinth.mp3-c0124decb4911315e21b91e285dc8205.mp3str"
+
+[deps]
+
+source_file="res://Assets/SoundEffects/mainmenu/labyrinth.mp3"
+dest_files=[ "res://.import/labyrinth.mp3-c0124decb4911315e21b91e285dc8205.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

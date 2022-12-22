@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/v3_hantu.mp3-6e88efe0a44d778c01f84ad5297b7a7e.mp3str"
+
+[deps]
+
+source_file="res://Assets/SoundEffects/hantu/v3_hantu.mp3"
+dest_files=[ "res://.import/v3_hantu.mp3-6e88efe0a44d778c01f84ad5297b7a7e.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

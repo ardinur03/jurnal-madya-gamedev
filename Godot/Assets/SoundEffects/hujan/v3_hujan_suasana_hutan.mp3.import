@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/v3_hujan_suasana_hutan.mp3-f51975988098b45ab871847ca9c628b4.mp3str"
+
+[deps]
+
+source_file="res://Assets/SoundEffects/hujan/v3_hujan_suasana_hutan.mp3"
+dest_files=[ "res://.import/v3_hujan_suasana_hutan.mp3-f51975988098b45ab871847ca9c628b4.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

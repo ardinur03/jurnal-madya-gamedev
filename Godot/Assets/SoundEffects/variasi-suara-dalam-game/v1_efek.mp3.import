@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/v1_efek.mp3-e01be8ce8907ba5c00647e6f8fcf5168.mp3str"
+
+[deps]
+
+source_file="res://Assets/SoundEffects/variasi-suara-dalam-game/v1_efek.mp3"
+dest_files=[ "res://.import/v1_efek.mp3-e01be8ce8907ba5c00647e6f8fcf5168.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

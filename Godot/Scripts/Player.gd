@@ -2,7 +2,7 @@ extends KinematicBody
 
 const GRAVITY = -24.8
 var vel = Vector3()
-const MAX_SPEED = 10
+var MAX_SPEED = 30
 const JUMP_SPEED = 18
 const ACCEL = 4.5
 
@@ -14,9 +14,7 @@ const MAX_SLOPE_ANGLE = 40
 var camera
 var rotation_helper
 var raycast
-var held_object : Object
-var hold_position
-var key 
+var current_scene
 
 var MOUSE_SENSITIVITY = 0.1
 
@@ -24,8 +22,7 @@ func _ready():
 	camera = $Head/Camera
 	rotation_helper = $Head
 	raycast = $Head/Camera/RayCast
-	hold_position = $Head/Camera/HoldPosition
-	key = $"/root/Underground/Key"
+	current_scene = get_tree().get_current_scene().get_name()
 
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 
@@ -34,14 +31,34 @@ func _physics_process(delta):
 	process_movement(delta)
 
 func process_input(delta):
-
+		
 	# ----------------------------------
 	# Walking
 	dir = Vector3()
 	var cam_xform = camera.get_global_transform()
 
 	var input_movement_vector = Vector2()
-
+	
+	if Input.is_action_just_pressed("movement_forward"):
+		MusicController.play_footstep_SE()
+	if Input.is_action_just_released("movement_forward"):
+		MusicController.stop_SE()
+	
+	if Input.is_action_just_pressed("movement_backward"):
+		MusicController.play_footstep_SE()
+	if Input.is_action_just_released("movement_backward"):
+		MusicController.stop_SE()
+	
+	if Input.is_action_just_pressed("movement_left"):
+		MusicController.play_footstep_SE()
+	if Input.is_action_just_released("movement_left"):
+		MusicController.stop_SE()
+	
+	if Input.is_action_just_pressed("movement_right"):
+		MusicController.play_footstep_SE()
+	if Input.is_action_just_released("movement_right"):
+		MusicController.stop_SE()
+	
 	if Input.is_action_pressed("movement_forward"):
 		input_movement_vector.y += 1
 	if Input.is_action_pressed("movement_backward"):
@@ -66,20 +83,15 @@ func process_input(delta):
 		else:
 			Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 	# ----------------------------------
-	
-	# Pick up objects
-	if Input.is_action_just_pressed("left_click"):
-
-		if(raycast.get_collider() == key):
-			key.global_transform.origin = Vector3(-999,-999,-999)
-			print('Kunci telah diambil')
-			
-		
-	if held_object:
-		held_object.global_transform.origin = hold_position.global_transform.origin
 		
 
 func process_movement(delta):
+	if (current_scene == 'House'):
+		MAX_SPEED = 20
+	if (current_scene == 'Labyrinth'):
+		MAX_SPEED = 10
+	print(self.global_transform.origin)
+	
 	dir.y = 0
 	dir = dir.normalized()
 

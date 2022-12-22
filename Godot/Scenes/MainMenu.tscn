@@ -28,11 +28,12 @@ margin_right = 470.0
 margin_bottom = 625.0
 custom_constants/separation = 4
 
-[node name="Play" parent="TextureRect/VBoxContainer" instance=ExtResource( 3 )]
+[node name="PLAY" parent="TextureRect/VBoxContainer" instance=ExtResource( 3 )]
 margin_right = 136.0
 margin_bottom = 33.0
 text = "PLAY"
 align = 0
+reference_path = "res://Scenes/HouseMap.tscn"
 
 [node name="OPTION" parent="TextureRect/VBoxContainer" instance=ExtResource( 3 )]
 margin_top = 37.0
