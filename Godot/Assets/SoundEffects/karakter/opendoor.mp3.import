@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/opendoor.mp3-53c3de1884d90a6c4fe1f5540374f320.mp3str"
+
+[deps]
+
+source_file="res://Assets/SoundEffects/karakter/opendoor.mp3"
+dest_files=[ "res://.import/opendoor.mp3-53c3de1884d90a6c4fe1f5540374f320.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

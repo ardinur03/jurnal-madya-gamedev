@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/lockedkey.mp3-b5c5f45829b0d171c275a26f1eae85f9.mp3str"
+
+[deps]
+
+source_file="res://Assets/SoundEffects/karakter/lockedkey.mp3"
+dest_files=[ "res://.import/lockedkey.mp3-b5c5f45829b0d171c275a26f1eae85f9.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

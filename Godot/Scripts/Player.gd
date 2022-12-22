@@ -89,8 +89,8 @@ func process_movement(delta):
 	if (current_scene == 'House'):
 		MAX_SPEED = 20
 	if (current_scene == 'Labyrinth'):
-		MAX_SPEED = 10
-	print(self.global_transform.origin)
+		MAX_SPEED = 5
+	#print(self.global_transform.origin)
 	
 	dir.y = 0
 	dir = dir.normalized()

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/afterrain.mp3-c7a5ef16664866b8d9080b499f6edfd9.mp3str"
+
+[deps]
+
+source_file="res://Assets/SoundEffects/mainmenu/afterrain.mp3"
+dest_files=[ "res://.import/afterrain.mp3-c7a5ef16664866b8d9080b499f6edfd9.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

@@ -38,9 +38,6 @@ transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, 0
 enabled = true
 cast_to = Vector3( 0, 0, -3 )
 
-[node name="HoldPosition" type="Spatial" parent="Head/Camera"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.59343e-07, 0, -2.96654 )
-
 [node name="Tween" type="Tween" parent="."]
 
 [node name="RayBack" type="RayCast" parent="."]

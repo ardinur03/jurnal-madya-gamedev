@@ -16,6 +16,11 @@ func play_housemap_BGM():
 	$Music.stream = housemap
 	$Music.play()
 
+func play_housemapend_BGM():
+	var housemap = load("res://Assets/SoundEffects/mainmenu/afterrain.mp3")
+	$Music.stream = housemap
+	$Music.play()
+
 # Labyrinth
 func play_labyrinthmap_BGM():
 	var labyrinth = load("res://Assets/SoundEffects/mainmenu/labyrinth.mp3")
@@ -30,9 +35,27 @@ func play_footstep_SE():
 	$SoundEffect.play()
 
 # Collect Key
-func play_key_SE():
+func play_getkey_SE():
 	var collectkey = load("res://Assets/SoundEffects/karakter/getkey.mp3")
 	$SoundEffect.stream = collectkey
+	$SoundEffect.play()
+
+# Locked Key
+func play_lockedkey_SE():
+	var lockedkey = load("res://Assets/SoundEffects/karakter/lockedkey.mp3")
+	$SoundEffect.stream = lockedkey
+	$SoundEffect.play()
+
+# Get Note
+func play_getnote_SE():
+	var getnote = load("res://Assets/SoundEffects/karakter/note.mp3")
+	$SoundEffect.stream = getnote
+	$SoundEffect.play()
+
+# Open Door
+func play_opendoor_SE():
+	var opendoor = load("res://Assets/SoundEffects/karakter/opendoor.mp3")
+	$SoundEffect.stream = opendoor
 	$SoundEffect.play()
 
 ###############################################################################	
